@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Teamwork Sidebar Links",
+  "description": "Add links the the sidebar in Teamwork",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "js": ["scripts/sidebar.js"],
+      "matches": [
+        "https://*.teamwork.com/app/*"
+      ]
+    }
+  ]
+}
